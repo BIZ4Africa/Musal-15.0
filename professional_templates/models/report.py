@@ -45,7 +45,7 @@ logger = getLogger(__name__)
 class PDFReport(models.Model):
     _inherit = 'ir.actions.report'
 
-    @api.multi
+    
     def _post_pdf(self, save_in_attachment, pdf_content=None, res_ids=None):
         result = super(
             PDFReport,

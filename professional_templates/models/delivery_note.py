@@ -38,7 +38,7 @@ class DN(models.Model):
     """inventory model inherited to add more field for the reporting engine."""
     _inherit = ["stock.picking"]
 
-    @api.multi
+    
     @api.onchange('partner_id')
     def onchange_partner_style(self):
         """method to assign a style to a report based on the selected

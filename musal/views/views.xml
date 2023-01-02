@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="musal.list">
+      <field name="name">musal list</field>
+      <field name="model">musal.musal</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="musal.action_window">
+      <field name="name">musal window</field>
+      <field name="res_model">musal.musal</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="musal.action_server">
+      <field name="name">musal server</field>
+      <field name="model_id" ref="model_musal_musal"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="musal" id="musal.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="musal.menu_1" parent="musal.menu_root"/>
+    <menuitem name="Menu 2" id="musal.menu_2" parent="musal.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="musal.menu_1_list" parent="musal.menu_1"
+              action="musal.action_window"/>
+    <menuitem name="Server to list" id="musal" parent="musal.menu_2"
+              action="musal.action_server"/>
+    -->
+  </data>
+</odoo>

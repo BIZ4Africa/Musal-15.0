@@ -1,0 +1,8 @@
+<odoo>
+	<template id="report_assets_common">
+		<t t-call="web._assets_helpers"><t t-set="no_bs_vars" t-value="True"/></t>
+
+		<link rel="stylesheet" type="text/scss" href="/web/static/src/scss/layout_standard.scss"/>
+	</template>
+
+</odoo>

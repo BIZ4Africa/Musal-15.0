@@ -35,7 +35,7 @@ from odoo import models, fields, api, _
 from odoo.tools.safe_eval import safe_eval
 from odoo.exceptions import UserError
 ROTATE = [(str(x), str(x) + "°") for x in range(0, 361)]
-FONTSIZE = [(x, str(x)) for x in range(1, 160)]
+FONTSIZE = [(str(x), str(x)) for x in range(1, 160)]
 OPACITY = [(str(round(x * 0.01, 2)), str(round(x * 0.01, 2)))
            for x in range(5, 105, 5)]
 
@@ -229,11 +229,11 @@ class TemplateSettings(models.Model):
         help="The Text color of the areas bearing the theme color. Normally this should NOT\
                 be the same color as the theme color. Otherwise the text will not be visible")
 
-    header_font = fields.Selection([(x, str(x)) for x in range(
+    header_font = fields.Selection([(str(x), str(x)) for x in range(
         1, 51)], string="Header Font(px):", default=10, required=True)
-    body_font = fields.Selection([(x, str(x)) for x in range(
+    body_font = fields.Selection([(str(x), str(x)) for x in range(
         1, 51)], string="Body Font(px):", default=10, required=True)
-    footer_font = fields.Selection([(x, str(x)) for x in range(
+    footer_font = fields.Selection([(str(x), str(x)) for x in range(
         1, 51)], string="Footer Font(px):", default=8, required=True)
     font_family = fields.Char(
         'Font Family:',

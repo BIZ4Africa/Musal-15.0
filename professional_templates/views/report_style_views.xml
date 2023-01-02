@@ -3,7 +3,7 @@
     <record id='reports_styles_action' model='ir.actions.act_window'>
         <field name="name">Reports Styles</field>
         <field name="res_model">report.template.settings</field>
-        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem

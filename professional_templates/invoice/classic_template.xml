@@ -35,7 +35,7 @@
 				</t>
 			</div> <!--end of Header-->
 			<!-- START OF PAGE -->
-			<div class="article page" t-attf-data-oe-model="account.invoice" t-attf-data-oe-id="{{o.id}}" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+			<div class="article page" t-attf-data-oe-model="account.move" t-attf-data-oe-id="{{o.id}}" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
 				<div class="col-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(o, time, user, res_company)"/></div>
 				<div class="col-12 float-left" t-attf-style="margin-top:0px;padding-top:1px;padding-left:0px;padding-right:0px;color:{{style.theme_txt_color}} !important;background-color:{{style.theme_color}} !important;">
 					<div class="col-12 float-left"> 

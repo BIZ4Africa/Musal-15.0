@@ -95,7 +95,6 @@ class db_backup(models.Model):
             return True
         return False
 
-    _constraints = [(_check_db_exist, _('Error ! No such database exists!'), [])]
 
     
     def test_sftp_connection(self, context=None):
